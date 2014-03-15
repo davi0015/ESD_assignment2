@@ -15,7 +15,7 @@
 #include <stdlib.h>
 
 /* CONSTANT OR DEFINITION */
-#define LED_PERIOD 30
+#define LED_PERIOD 128
 #define MINIMUM_BRIGHTNESS 1
 #define MAXIMUM_BRIGHTNESS LED_PERIOD
 
@@ -46,16 +46,27 @@ void lamp_off(){
 	led_on_time = 0;
 }
 
+int min (int a, int b) {
+	return a < b ? a : b;
+}
+
+int max (int a, int b) {
+	return a > b ? a : b;
+}
+
 void lamp_dim(){
-	if (led_on_time > MINIMUM_BRIGHTNESS) led_on_time--;
+	if (led_on_time > MINIMUM_BRIGHTNESS) //led_on_time--;
+		led_on_time = max (led_on_time / 1.2, MINIMUM_BRIGHTNESS);
 }
 
 void lamp_brighten(){
-	if (led_on_time < MAXIMUM_BRIGHTNESS) led_on_time++;
+	if (led_on_time < MAXIMUM_BRIGHTNESS) //led_on_time++;
+		led_on_time = min (led_on_time * 1.2, MAXIMUM_BRIGHTNESS);
 }
 
 void lamp_dim_off(){
-	if (led_on_time > 0) led_on_time--;
+	if (led_on_time > 0) //led_on_time--;
+		led_on_time = led_on_time / 1.2;
 }
 
 //alarm function
@@ -317,7 +328,7 @@ enum LAMP_States LAMP_fsm(enum LAMP_States state, int* counter) {
 
 __task void LAMP_task(void) {
 	//variable declaration
-	const unsigned int task_period = 4000;
+	const unsigned int task_period = 5000;
 	enum LAMP_States state = LAMP_init;
 	int counter = 0;
 	
