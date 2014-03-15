@@ -31,11 +31,11 @@ unsigned char Button[2];
  *        Helper function
  *---------------------------------------------------------------------------*/
 void lamp_full(){
-	*LED |= 0xFC;
+	*LED |= 0x3F;
 }
 
 void lamp_empty(){
-	*LED &= 0x03;
+	*LED &= 0xC0;
 }
 
 void lamp_max_brightness(){
@@ -71,11 +71,11 @@ void lamp_dim_off(){
 
 //alarm function
 void alarm_off(){
-	*LED &= 0xFC;
+	*LED &= 0x3F;
 }
 
 void alarm_blink(){
-	*LED ^= 0x03;
+	*LED ^= 0xC0;
 }
 
 
@@ -138,8 +138,8 @@ enum LED_States LED_fsm(enum LED_States state, int* counter, int on_time) {
 enum LAMP_States { LAMP_init, D0AC0, D0AC1, D1AC0, D1AC1};
 enum LAMP_States LAMP_fsm(enum LAMP_States state, int* counter) {
 	//variable declaration
-	unsigned char DOOR_switch = Button[1];
-	unsigned char AC_switch = Button[0];
+	unsigned char DOOR_switch = Button[0];
+	unsigned char AC_switch = Button[1];
 	const unsigned int one_second = 5;
 	switch(state) {
 		case LAMP_init: 
@@ -218,9 +218,9 @@ enum LAMP_States LAMP_fsm(enum LAMP_States state, int* counter) {
 				lamp_dim();
 			}
 			LCD_cls();
-			LCD_puts((unsigned char*) "DOOR CLOSED ");
-			LCD_gotoxy(1,2);  // switch to the second line
 			LCD_puts((unsigned char*) "AC OFF      ");
+			LCD_gotoxy(1,2);  // switch to the second line
+			LCD_puts((unsigned char*) "DOOR CLOSED ");
 			LCD_cur_off ();
 		}
 		break;
@@ -237,9 +237,9 @@ enum LAMP_States LAMP_fsm(enum LAMP_States state, int* counter) {
 			
 			//Set lcd:
 			LCD_cls();
-			LCD_puts((unsigned char*) "DOOR CLOSED ");
-			LCD_gotoxy(1,2);  // switch to the second line
 			LCD_puts((unsigned char*) "AC ON       ");
+			LCD_gotoxy(1,2);  // switch to the second line
+			LCD_puts((unsigned char*) "DOOR CLOSED ");
 			LCD_cur_off ();
 		}
 		break;
@@ -255,9 +255,9 @@ enum LAMP_States LAMP_fsm(enum LAMP_States state, int* counter) {
 			
 			//Set lcd:
 			LCD_cls();
-			LCD_puts((unsigned char*) "DOOR OPEN ");
-			LCD_gotoxy(1,2);  // switch to the second line
 			LCD_puts((unsigned char*) "AC OFF    ");
+			LCD_gotoxy(1,2);  // switch to the second line
+			LCD_puts((unsigned char*) "DOOR OPEN ");
 			LCD_cur_off ();
 		}
 		break;
@@ -275,9 +275,9 @@ enum LAMP_States LAMP_fsm(enum LAMP_States state, int* counter) {
 			
 			//Set lcd:
 			LCD_cls();
-			LCD_puts((unsigned char*) "DOOR OPEN ");
+			LCD_puts((unsigned char*) "AC ON     ");
 			LCD_gotoxy(1,2);  // switch to the second line
-			LCD_puts((unsigned char*) "AC ON      ");
+			LCD_puts((unsigned char*) "DOOR OPEN ");
 			LCD_cur_off ();
 		}
 		break;
