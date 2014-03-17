@@ -9,3 +9,4 @@
 !*.h
 !report
 !report/*
+!report/Image/*
