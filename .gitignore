@@ -1,4 +1,10 @@
+*
+
 # Ignore everything
 *.gitignore
 *.md
 *.db
+
+!*.c
+!*.h
+!report/*
