@@ -1,4 +1,4 @@
-## File last modified by Fizzim: 11:00:35 PM on 3/17/14
+## File last modified by Fizzim: 11:40:31 PM on 3/17/14
 <version>
    14.02.26
 </version>
@@ -580,10 +580,10 @@
 </tabs>
 ## START PREFERENCES
 <SCounter>
-8
+9
 </SCounter>
 <TCounter>
-18
+19
 </TCounter>
 <TableVis>
 false
@@ -2093,7 +2093,7 @@ VARIABLES
    </page>
 </textObj>
 <textObj>
-H, X
+H: {0,...,128}
    <x>
    22
    </x>
@@ -2221,16 +2221,16 @@ H, X
       </LED>
    </attributes>
    <x0>
-   232
+   240
    </x0>
    <y0>
-   157
+   205
    </y0>
    <x1>
-   362
+   370
    </x1>
    <y1>
-   287
+   335
    </y1>
    <reset>
    false
@@ -2360,16 +2360,16 @@ H, X
       </LED>
    </attributes>
    <x0>
-   593
+   601
    </x0>
    <y0>
-   160
+   208
    </y0>
    <x1>
-   723
+   731
    </x1>
    <y1>
-   290
+   338
    </y1>
    <reset>
    false
@@ -2505,28 +2505,28 @@ H, X
    L_LED_ON
    </endState>
    <startPtX>
-   346.0
+   354.0
    </startPtX>
    <startPtY>
-   180.0
+   228.0
    </startPtY>
    <endPtX>
-   601.0
+   609.0
    </endPtX>
    <endPtY>
-   192.0
+   240.0
    </endPtY>
    <startCtrlPtX>
-   404.0
+   412.0
    </startCtrlPtX>
    <startCtrlPtY>
-   148.0
+   196.0
    </startCtrlPtY>
    <endCtrlPtY>
-   553.0
+   561.0
    </endCtrlPtY>
    <endCtrlPtY>
-   145.0
+   193.0
    </endCtrlPtY>
    <startStateIndex>
    32
@@ -2692,28 +2692,28 @@ H, X
    L_LED_OFF
    </endState>
    <startPtX>
-   608.0
+   616.0
    </startPtX>
    <startPtY>
-   266.0
+   314.0
    </startPtY>
    <endPtX>
-   346.0
+   354.0
    </endPtX>
    <endPtY>
-   263.0
+   311.0
    </endPtY>
    <startCtrlPtX>
-   520.0
+   528.0
    </startCtrlPtX>
    <startCtrlPtY>
-   297.0
+   345.0
    </startCtrlPtY>
    <endCtrlPtY>
-   437.0
+   445.0
    </endCtrlPtY>
    <endCtrlPtY>
-   297.0
+   345.0
    </endCtrlPtY>
    <startStateIndex>
    14
@@ -2879,28 +2879,28 @@ H, X
    L_LED_ON
    </endState>
    <startPtX>
-   625.0
+   633.0
    </startPtX>
    <startPtY>
-   168.0
+   216.0
    </startPtY>
    <endPtX>
-   680.0
+   688.0
    </endPtX>
    <endPtY>
-   163.0
+   211.0
    </endPtY>
    <startCtrlPtX>
-   584.0
+   592.0
    </startCtrlPtX>
    <startCtrlPtY>
-   96.0
+   144.0
    </startCtrlPtY>
    <endCtrlPtY>
-   708.0
+   716.0
    </endCtrlPtY>
    <endCtrlPtY>
-   84.0
+   132.0
    </endCtrlPtY>
    <startStateIndex>
    24
@@ -3039,28 +3039,28 @@ H, X
    L_LED_OFF
    </endState>
    <startPtX>
-   264.0
+   272.0
    </startPtX>
    <startPtY>
-   165.0
+   213.0
    </startPtY>
    <endPtX>
-   319.0
+   327.0
    </endPtX>
    <endPtY>
-   160.0
+   208.0
    </endPtY>
    <startCtrlPtX>
-   223.0
+   231.0
    </startCtrlPtX>
    <startCtrlPtY>
-   91.0
+   139.0
    </startCtrlPtY>
    <endCtrlPtY>
-   344.0
+   352.0
    </endCtrlPtY>
    <endCtrlPtY>
-   80.0
+   128.0
    </endCtrlPtY>
    <startStateIndex>
    24
@@ -3199,28 +3199,28 @@ H, X
    L_LED_ON
    </endState>
    <startPtX>
-   714.0
+   722.0
    </startPtX>
    <startPtY>
-   192.0
+   240.0
    </startPtY>
    <endPtX>
-   719.0
+   727.0
    </endPtX>
    <endPtY>
-   247.0
+   295.0
    </endPtY>
    <startCtrlPtX>
-   784.0
+   792.0
    </startCtrlPtX>
    <startCtrlPtY>
-   150.0
+   198.0
    </startCtrlPtY>
    <endCtrlPtY>
-   792.0
+   800.0
    </endCtrlPtY>
    <endCtrlPtY>
-   276.0
+   324.0
    </endCtrlPtY>
    <startStateIndex>
    33
@@ -3342,10 +3342,10 @@ H, X
             </status>
          </resetval>
          <x2Obj>
-         -2
+         -11
          </x2Obj>
          <y2Obj>
-         -23
+         -31
          </y2Obj>
          <page>
          2
@@ -3359,34 +3359,34 @@ H, X
    L_LED_OFF
    </endState>
    <startPtX>
-   240.0
+   263.0
    </startPtX>
    <startPtY>
-   254.0
+   319.0
    </startPtY>
    <endPtX>
-   235.0
+   240.0
    </endPtX>
    <endPtY>
-   199.0
+   270.0
    </endPtY>
    <startCtrlPtX>
-   170.0
+   211.0
    </startCtrlPtX>
    <startCtrlPtY>
-   296.0
+   382.0
    </startCtrlPtY>
    <endCtrlPtY>
-   162.0
+   232.0
    </endCtrlPtY>
    <endCtrlPtY>
-   170.0
+   267.0
    </endCtrlPtY>
    <startStateIndex>
-   15
+   13
    </startStateIndex>
    <endStateIndex>
-   20
+   18
    </endStateIndex>
    <page>
    2
@@ -3519,28 +3519,28 @@ H, X
    L_LED_ON
    </endState>
    <startPtX>
-   361.0
+   369.0
    </startPtX>
    <startPtY>
-   210.0
+   258.0
    </startPtY>
    <endPtX>
-   593.0
+   601.0
    </endPtX>
    <endPtY>
-   213.0
+   261.0
    </endPtY>
    <startCtrlPtX>
-   430.0
+   438.0
    </startCtrlPtX>
    <startCtrlPtY>
-   211.0
+   259.0
    </startCtrlPtY>
    <endCtrlPtY>
-   525.0
+   533.0
    </endCtrlPtY>
    <endCtrlPtY>
-   212.0
+   260.0
    </endCtrlPtY>
    <startStateIndex>
    35
@@ -3706,28 +3706,28 @@ H, X
    L_LED_OFF
    </endState>
    <startPtX>
-   593.0
+   601.0
    </startPtX>
    <startPtY>
-   236.0
+   284.0
    </startPtY>
    <endPtX>
-   361.0
+   369.0
    </endPtX>
    <endPtY>
-   233.0
+   281.0
    </endPtY>
    <startCtrlPtX>
-   525.0
+   533.0
    </startCtrlPtX>
    <startCtrlPtY>
-   236.0
+   284.0
    </startCtrlPtY>
    <endCtrlPtY>
-   427.0
+   435.0
    </endCtrlPtY>
    <endCtrlPtY>
-   233.0
+   281.0
    </endCtrlPtY>
    <startStateIndex>
    17
@@ -3893,28 +3893,28 @@ H, X
    L_LED_ON
    </endState>
    <startPtX>
-   707.0
+   715.0
    </startPtX>
    <startPtY>
-   266.0
+   314.0
    </startPtY>
    <endPtX>
-   658.0
+   666.0
    </endPtX>
    <endPtY>
-   290.0
+   338.0
    </endPtY>
    <startCtrlPtX>
-   771.0
+   779.0
    </startCtrlPtX>
    <startCtrlPtY>
-   320.0
+   368.0
    </startCtrlPtY>
    <endCtrlPtY>
-   658.0
+   666.0
    </endCtrlPtY>
    <endCtrlPtY>
-   374.0
+   422.0
    </endCtrlPtY>
    <startStateIndex>
    4
@@ -4053,28 +4053,28 @@ H, X
    L_LED_OFF
    </endState>
    <startPtX>
-   319.0
+   327.0
    </startPtX>
    <startPtY>
-   283.0
+   331.0
    </startPtY>
    <endPtX>
-   264.0
+   272.0
    </endPtX>
    <endPtY>
-   278.0
+   326.0
    </endPtY>
    <startCtrlPtX>
-   347.0
+   355.0
    </startCtrlPtX>
    <startCtrlPtY>
-   361.0
+   409.0
    </startCtrlPtY>
    <endCtrlPtY>
-   223.0
+   231.0
    </endCtrlPtY>
    <endCtrlPtY>
-   351.0
+   399.0
    </endCtrlPtY>
    <startStateIndex>
    7
@@ -4093,10 +4093,10 @@ H, X
 <textObj>
 H:=128
    <x>
-   456
+   464
    </x>
    <y>
-   151
+   199
    </y>
    <page>
    2
@@ -4105,10 +4105,10 @@ H:=128
 <textObj>
 X:=X+1
    <x>
-   461
+   469
    </x>
    <y>
-   208
+   256
    </y>
    <page>
    2
@@ -4117,10 +4117,10 @@ X:=X+1
 <textObj>
 X:=0
    <x>
-   459
+   467
    </x>
    <y>
-   267
+   315
    </y>
    <page>
    2
@@ -4129,10 +4129,10 @@ X:=0
 <textObj>
 H:=0
    <x>
-   458
+   466
    </x>
    <y>
-   325
+   373
    </y>
    <page>
    2
@@ -4141,10 +4141,10 @@ H:=0
 <textObj>
 H:=128
    <x>
-   788
+   796
    </x>
    <y>
-   233
+   281
    </y>
    <page>
    2
@@ -4153,10 +4153,10 @@ H:=128
 <textObj>
 X:=X+1
    <x>
-   726
+   734
    </x>
    <y>
-   346
+   394
    </y>
    <page>
    2
@@ -4165,10 +4165,10 @@ X:=X+1
 <textObj>
 X:=X+1
    <x>
-   267
+   275
    </x>
    <y>
-   368
+   416
    </y>
    <page>
    2
@@ -4177,10 +4177,10 @@ X:=X+1
 <textObj>
 H:=0
    <x>
-   136
+   156
    </x>
    <y>
-   240
+   327
    </y>
    <page>
    2
@@ -4189,10 +4189,10 @@ H:=0
 <textObj>
 H:=max(1, (int)(H/1.2))
    <x>
-   595
+   603
    </x>
    <y>
-   100
+   148
    </y>
    <page>
    2
@@ -4201,13 +4201,351 @@ H:=max(1, (int)(H/1.2))
 <textObj>
 H:=max(1, (int)(H/1.2))
    <x>
-   269
+   277
    </x>
    <y>
-   97
+   145
    </y>
    <page>
    2
    </page>
 </textObj>
+<textObj>
+X:{0,...,128}
+   <x>
+   22
+   </x>
+   <y>
+   135
+   </y>
+   <page>
+   2
+   </page>
+</textObj>
+## START STATE OBJECT
+<state>
+   <attributes>
+      <name>
+            <status>
+            ABS
+            </status>
+         <value>
+         state8
+            <status>
+            LOCAL
+            </status>
+         </value>
+         <vis>
+         1
+            <status>
+            GLOBAL_VAR
+            </status>
+         </vis>
+         <type>
+         def_type
+            <status>
+            GLOBAL_VAR
+            </status>
+         </type>
+         <comment>
+         
+            <status>
+            GLOBAL_VAR
+            </status>
+         </comment>
+         <color>
+         -16777216
+            <status>
+            GLOBAL_VAR
+            </status>
+         </color>
+         <useratts>
+         
+            <status>
+            GLOBAL_VAR
+            </status>
+         </useratts>
+         <resetval>
+         
+            <status>
+            GLOBAL_VAR
+            </status>
+         </resetval>
+         <x2Obj>
+         -8
+         </x2Obj>
+         <y2Obj>
+         -1
+         </y2Obj>
+         <page>
+         2
+         </page>
+      </name>
+      <LED>
+            <status>
+            GLOBAL_FIXED
+            </status>
+         <value>
+         OFF
+            <status>
+            GLOBAL_VAR
+            </status>
+         </value>
+         <vis>
+         2
+            <status>
+            GLOBAL_VAR
+            </status>
+         </vis>
+         <type>
+         output
+            <status>
+            GLOBAL_VAR
+            </status>
+         </type>
+         <comment>
+         
+            <status>
+            GLOBAL_VAR
+            </status>
+         </comment>
+         <color>
+         -16777216
+            <status>
+            GLOBAL_VAR
+            </status>
+         </color>
+         <useratts>
+         
+            <status>
+            GLOBAL_VAR
+            </status>
+         </useratts>
+         <resetval>
+         
+            <status>
+            GLOBAL_VAR
+            </status>
+         </resetval>
+         <x2Obj>
+         0
+         </x2Obj>
+         <y2Obj>
+         0
+         </y2Obj>
+         <page>
+         2
+         </page>
+      </LED>
+   </attributes>
+   <x0>
+   142
+   </x0>
+   <y0>
+   189
+   </y0>
+   <x1>
+   170
+   </x1>
+   <y1>
+   221
+   </y1>
+   <reset>
+   false
+   </reset>
+   <page>
+   2
+   </page>
+   <color>
+   -16777216
+   </color>
+</state>
+## END STATE OBJECT
+## START STATE TRANSITION OBJECT
+<transition>
+   <attributes>
+      <name>
+            <status>
+            ABS
+            </status>
+         <value>
+         trans18
+            <status>
+            LOCAL
+            </status>
+         </value>
+         <vis>
+         0
+            <status>
+            GLOBAL_VAR
+            </status>
+         </vis>
+         <type>
+         def_type
+            <status>
+            GLOBAL_VAR
+            </status>
+         </type>
+         <comment>
+         
+            <status>
+            GLOBAL_VAR
+            </status>
+         </comment>
+         <color>
+         -16777216
+            <status>
+            GLOBAL_VAR
+            </status>
+         </color>
+         <useratts>
+         
+            <status>
+            GLOBAL_VAR
+            </status>
+         </useratts>
+         <resetval>
+         
+            <status>
+            GLOBAL_VAR
+            </status>
+         </resetval>
+         <x2Obj>
+         0
+         </x2Obj>
+         <y2Obj>
+         0
+         </y2Obj>
+         <page>
+         2
+         </page>
+      </name>
+      <equation>
+            <status>
+            ABS
+            </status>
+         <value>
+         H:=0, X:=0
+            <status>
+            LOCAL
+            </status>
+         </value>
+         <vis>
+         1
+            <status>
+            GLOBAL_VAR
+            </status>
+         </vis>
+         <type>
+         def_type
+            <status>
+            GLOBAL_VAR
+            </status>
+         </type>
+         <comment>
+         
+            <status>
+            GLOBAL_VAR
+            </status>
+         </comment>
+         <color>
+         -16777216
+            <status>
+            GLOBAL_VAR
+            </status>
+         </color>
+         <useratts>
+         
+            <status>
+            GLOBAL_VAR
+            </status>
+         </useratts>
+         <resetval>
+         
+            <status>
+            GLOBAL_VAR
+            </status>
+         </resetval>
+         <x2Obj>
+         8
+         </x2Obj>
+         <y2Obj>
+         -20
+         </y2Obj>
+         <page>
+         2
+         </page>
+      </equation>
+   </attributes>
+   <startState>
+   state8
+   </startState>
+   <endState>
+   L_LED_OFF
+   </endState>
+   <startPtX>
+   169.0
+   </startPtX>
+   <startPtY>
+   210.0
+   </startPtY>
+   <endPtX>
+   248.0
+   </endPtX>
+   <endPtY>
+   237.0
+   </endPtY>
+   <startCtrlPtX>
+   192.0
+   </startCtrlPtX>
+   <startCtrlPtY>
+   203.0
+   </startCtrlPtY>
+   <endCtrlPtY>
+   235.0
+   </endCtrlPtY>
+   <endCtrlPtY>
+   214.0
+   </endCtrlPtY>
+   <startStateIndex>
+   2
+   </startStateIndex>
+   <endStateIndex>
+   21
+   </endStateIndex>
+   <page>
+   2
+   </page>
+   <color>
+   -16777216
+   </color>
+   <pageSX>
+   0.0
+   </pageSX>
+   <pageSY>
+   0.0
+   </pageSY>
+   <pageSCX>
+   0.0
+   </pageSCX>
+   <pageSCY>
+   0.0
+   </pageSCY>
+   <pageEX>
+   0.0
+   </pageEX>
+   <pageEY>
+   0.0
+   </pageEY>
+   <pageECX>
+   0.0
+   </pageECX>
+   <pageECY>
+   0.0
+   </pageECY>
+   <stub>
+   false
+   </stub>
+</transition>
+## END STATE TRANSITION OBJECT
 ## END OBJECTS
