@@ -293,27 +293,10 @@ enum LAMP_States LAMP_fsm(enum LAMP_States state, int* counter) {
 /*----------------------------------------------------------------------------
  *        Tasks
  *---------------------------------------------------------------------------*/
-/*
- __task void LED_task(void) {
-	 //os_itv_set(task_period);
-	 while(1){
-			os_itv_set(LED_PERIOD);
-			if (led_on_time > 0) {
-			os_itv_set(led_on_time);
-			lamp_full();
-			os_itv_wait();
-			os_itv_set(LED_PERIOD - led_on_time);
-			lamp_empty();	
-			os_itv_wait();
-			}
-			if (led_on_time == 0) os_itv_wait();
-	 }
- }
-*/
 
  __task void LED_task(void) {
 	 //variable declaration
-	 const unsigned int task_period = 1; //called every 1 ms
+	 const unsigned int task_period = 1; //called every 40us
 	 int counter = 0;
 	 int on_time = 0;
 	 enum LED_States state = LED_init;
@@ -328,7 +311,7 @@ enum LAMP_States LAMP_fsm(enum LAMP_States state, int* counter) {
 
 __task void LAMP_task(void) {
 	//variable declaration
-	const unsigned int task_period = 5000;
+	const unsigned int task_period = 5000; //called every 200 ms
 	enum LAMP_States state = LAMP_init;
 	int counter = 0;
 	
@@ -340,28 +323,6 @@ __task void LAMP_task(void) {
 		os_itv_wait();
 	}
 }
- 
- 
- //Just for testing:
- __task void Button_task(void) {
-	 const unsigned int task_period = 200;
-	 char st[8];
-	 os_itv_set(task_period);
-	 while(1) {
-		 read_input();
-		 if (Button[0]) {
-			 if (led_on_time < LED_PERIOD) led_on_time++;
-		 }
-		 else if (Button[1]) {
-			 if (led_on_time > 0) led_on_time--;
-		 }
-		 os_itv_wait();
-		 sprintf(st, "%d", led_on_time);
-		 LCD_cls();
-		 LCD_puts((unsigned char*)st);
-		 LCD_cur_off ();
-	 }
- }
 
 /*----------------------------------------------------------------------------
  *        Task 'init': Initialize
@@ -393,7 +354,6 @@ __task void init (void) {
 
   /* Launch the task in the following manner   */
 	LED_State_Machine = os_tsk_create( LED_task, 0 );
-//	BUTTON_read = os_tsk_create( Button_task, 0);
 	LAMP_controller = os_tsk_create(LAMP_task, 0);
   os_tsk_delete_self ();
 }
