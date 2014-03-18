@@ -1,4 +1,4 @@
-## File last modified by Fizzim: 11:40:31 PM on 3/17/14
+## File last modified by Fizzim: 12:23:35 AM on 3/18/14
 <version>
    14.02.26
 </version>
@@ -3371,16 +3371,16 @@ H: {0,...,128}
    270.0
    </endPtY>
    <startCtrlPtX>
-   211.0
+   187.0
    </startCtrlPtX>
    <startCtrlPtY>
-   382.0
+   366.0
    </startCtrlPtY>
    <endCtrlPtY>
-   232.0
+   175.0
    </endCtrlPtY>
    <endCtrlPtY>
-   267.0
+   270.0
    </endCtrlPtY>
    <startStateIndex>
    13
@@ -4177,10 +4177,10 @@ X:=X+1
 <textObj>
 H:=0
    <x>
-   156
+   149
    </x>
    <y>
-   327
+   329
    </y>
    <page>
    2
@@ -4548,4 +4548,16 @@ X:{0,...,128}
    </stub>
 </transition>
 ## END STATE TRANSITION OBJECT
+<textObj>
+CLOCK_TICKS: 40 ?s
+   <x>
+   8
+   </x>
+   <y>
+   163
+   </y>
+   <page>
+   2
+   </page>
+</textObj>
 ## END OBJECTS
