@@ -1,6 +1,4 @@
 # Ignore everything
-*
-
-# Don't ignore the following files
-!*.h
-!*.c
+*.gitignore
+*.md
+*.db
